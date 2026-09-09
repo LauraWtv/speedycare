@@ -1,8 +1,8 @@
 function Team() {
   return (
-    <div>
-      
-    </div>
+    <main>
+      Team
+    </main>
   );
 }
 

@@ -5,14 +5,16 @@ import Expertise from "./pages/Expertise/Expertise";
 import Jobs from "./pages/Jobs/Jobs";
 import Team from "./pages/Team/Team";
 import Contact from "./pages/Contact/Contact";
-import Navigation from "./components/Navigation/navigation";
+import Navigation from "./components/Navigation/Navigation";
 import WebHeader from "./components/WebHeader/WebHeader";
+
 
 function App() {
   return (
-    <div>
+    <div className="app">
       {/*Foto*/}
       <WebHeader></WebHeader>
+      
 
       {/*Router*/}
       <BrowserRouter>

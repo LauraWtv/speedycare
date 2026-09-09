@@ -1,8 +1,8 @@
 function Expertise() {
   return (
-    <div>
-      
-    </div>
+    <main>
+      Expertise
+    </main>
   );
 }
 
