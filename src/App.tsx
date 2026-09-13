@@ -14,7 +14,7 @@ function App() {
   /* TODO: add font */
   /*https://mui.com/material-ui/react-card/ */
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/speedycare">
       <div className="app">
         {/*Foto*/}
         <WebHeader></WebHeader>
