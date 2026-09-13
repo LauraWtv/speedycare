@@ -1,0 +1,26 @@
+.nav {
+    background-color: #0203cf;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.nav .MuiTab-root {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  min-height: 3rem;
+  margin: 0 2rem;
+}
+
+.nav .MuiTab-root:hover {
+  color: white;
+}
+
+.nav .MuiTab-root.Mui-selected {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+/* Active tab stripe */
+.nav .MuiTabs-indicator {
+  background-color: var(--color-secondary);
+}

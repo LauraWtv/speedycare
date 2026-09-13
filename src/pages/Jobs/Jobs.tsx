@@ -1,8 +1,10 @@
 import { Card, CardContent, CardActions, Button } from "@mui/material";
 import "./Jobs.css";
 
+
 function Jobs() {
-  const handleOnClick = null;
+
+  /*TODO: put card in component*/
 
   return (
     <div className="container">
@@ -16,7 +18,7 @@ function Jobs() {
         </p>
         <Card className="card">
           <CardContent className="card-content">
-            <h3>Spontane sollicitatie</h3>
+            <h2>Spontane sollicitatie</h2>
             <p>
               Heb je een passie voor zorg en wil je graag bij ons aan de slag?
               Stuur ons dan gerust een spontane sollicitatie!
@@ -26,7 +28,8 @@ function Jobs() {
             <Button
               variant="contained"
               endIcon={<span className="material-symbols-outlined">send</span>}
-              onClick={handleOnClick}
+              className="button_apply"
+              href="mailto:Speedycarecontact@gmail.com?subject=SpeedyCare%20-%20Spontane%20sollicitatie"
             >
               Sturen
             </Button>

@@ -7,17 +7,20 @@ import Team from "./pages/Team/Team";
 import Contact from "./pages/Contact/Contact";
 import Navigation from "./components/Navigation/Navigation";
 import WebHeader from "./components/WebHeader/WebHeader";
-
+import Footer from "./components/Footer/Footer";
+import PrivacyCookies from "./pages/PrivacyCookies/PrivacyCookies";
 
 function App() {
+  /* TODO: add font */
+  /*https://mui.com/material-ui/react-card/ */
   return (
-    <div className="app">
-      {/*Foto*/}
-      <WebHeader></WebHeader>
-      
+    <BrowserRouter>
+      <div className="app">
+        {/*Foto*/}
+        <WebHeader></WebHeader>
 
-      {/*Router*/}
-      <BrowserRouter>
+        {/*Router*/}
+
         <Navigation></Navigation>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,9 +28,12 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacyCookies" element={<PrivacyCookies />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

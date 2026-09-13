@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Navigation.css";
+import "../../styles/variables.css"
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
@@ -16,7 +17,11 @@ function Navigation() {
   };
 
   return (
-    <Tabs value={location.pathname} onChange={handleChange}>
+    <Tabs
+      value={location.pathname}
+      onChange={handleChange}
+      className="nav"
+    >
       <Tab
         icon={<span className="material-symbols-outlined">home</span>}
         iconPosition="start"

@@ -1,9 +1,5 @@
 function Team() {
-  return (
-    <main>
-      Team
-    </main>
-  );
+  return <main>Team</main>;
 }
 
 export default Team;
