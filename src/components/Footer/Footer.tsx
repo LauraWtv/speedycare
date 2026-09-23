@@ -9,7 +9,7 @@ function Footer() {
       <div>
         <img className="footer_logo" src={logo} alt="logo SpeedyCare" />
       </div>
-      <div><Link to="/privacyCookies">Privacy- & cookiebeleid</Link></div>
+      <div><Link className="link-accent" to="/privacyCookies">Privacy- & cookiebeleid</Link></div>
     </div>
   );
 }

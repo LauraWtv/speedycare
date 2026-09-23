@@ -7,8 +7,6 @@ function Jobs() {
   /*TODO: put card in component*/
 
   return (
-    <div className="container">
-      <div></div>
       <div className="content">
         <h1>Kom jij ons team versterken?</h1>
         <p>
@@ -36,8 +34,6 @@ function Jobs() {
           </CardActions>
         </Card>
       </div>
-      <div></div>
-    </div>
   );
 }
 

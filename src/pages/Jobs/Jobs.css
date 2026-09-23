@@ -1,14 +1,10 @@
-.container {
-    display: grid;
-    grid-template-columns: 10rem auto 10rem;
-    flex-direction: row;
-    gap: 1rem;
-}
 
 .content {
     display: flex;
     flex-direction: column;
+    width: 60%;
     gap: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card {

@@ -10,3 +10,21 @@ body {
     color: var(--color-text);
     font-family: Arial, sans-serif;
 }
+
+.link-accent {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.link-accent:hover {
+  color: white;
+}
+
+.link-primary {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.link-primary:hover {
+  color: var(--color-secondary);
+}
