@@ -10,7 +10,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>speedycare</title>
+
+  <script>
+  (function () {
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+
+    if (redirect && redirect !== location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+
+  <title>SpeedyCare</title>
 </head>
 
 <body>
