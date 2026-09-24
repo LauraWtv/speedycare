@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button_apply {
+        background-color: var(--color-primary);
+    }
+}

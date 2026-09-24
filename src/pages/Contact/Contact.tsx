@@ -1,4 +1,5 @@
 import "./Contact.css";
+import MapView from "../../components/Map/MapView";
 
 function Contact() {
   return (
@@ -27,13 +28,9 @@ function Contact() {
           Kapellestraat 29 9890 Asper
         </a>
       </div>
-      <div className="map-container">
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=3.625%2C50.915%2C3.655%2C50.935&layer=mapnik&marker=50.92483149299598%2C3.6402253999812095"
-          title="SpeedyCare locatie"
-          loading="lazy"
-        />
-      </div>
+  
+        <MapView />
+    
     </div>
   );
 }

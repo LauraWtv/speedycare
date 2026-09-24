@@ -1,0 +1,17 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
