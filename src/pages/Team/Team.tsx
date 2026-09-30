@@ -1,8 +1,9 @@
+import "./Team.css";
 import CustomCardPhoto from "../../components/CustomCardPhoto/CustomCardPhoto";
 
 function Team() {
   return (
-    <div className="content">
+    <div className="team-content">
       <h1>Ons team</h1>
       <CustomCardPhoto />
     </div>

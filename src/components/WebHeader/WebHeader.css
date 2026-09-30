@@ -1,10 +1,13 @@
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.web-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    order: 1;
 }
 
-img {
-  width: 20rem;
-  height: auto;
+.web-header__logo {
+    width: clamp(8rem, 40vw, 20rem);
+    height: auto;
 }

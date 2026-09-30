@@ -16,20 +16,21 @@ function App() {
   return (
     <BrowserRouter basename="/speedycare">
       <div className="app">
-        {/*Foto*/}
-        <WebHeader></WebHeader>
+        <div className="top-section">
+          <Navigation />
+          <WebHeader />
+        </div>
 
-        {/*Router*/}
-
-        <Navigation></Navigation>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/expertise" element={<Expertise />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/jobs" element={<Jobs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacyCookies" element={<PrivacyCookies />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/expertise" element={<Expertise />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/jobs" element={<Jobs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacyCookies" element={<PrivacyCookies />} />
+          </Routes>
+        </main>
 
         <Footer />
       </div>

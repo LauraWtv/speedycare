@@ -1,17 +1,30 @@
-.card {
+.team-card {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+}
 
-    img {
+.team-card img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-  }
+}
 
+.team-card-content {
+    display: flex;
+    flex-direction: column;
+}
 
-    .card-content {
-        display: flex;
-        flex-direction: column;
+/* Tablet */
+@media (min-width: 768px) {
+    .team-card {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .team-card {
+        width: 50%;
     }
 }

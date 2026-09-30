@@ -1,23 +1,26 @@
 import "./Contact.css";
-import MapView from "../../components/Map/MapView";
+import MapView from "../../components/MapView/MapView";
 
 function Contact() {
   return (
-    <div className="content">
+    <div className="content contact-page">
       <h1>Contacteer ons</h1>
-      <div>
+
+      <div className="contact-item">
         <h4>Telefoon</h4>
         <a className="link-primary" href="tel:+32493697964">
           +32493697964
         </a>
       </div>
-      <div>
+
+      <div className="contact-item">
         <h4>E-mail</h4>
         <a className="link-primary" href="mailto:Speedycarecontact@gmail.com">
           Speedycarecontact@gmail.com
         </a>
       </div>
-      <div>
+
+      <div className="contact-item">
         <h4>Adres</h4>
         <a
           className="link-primary"
@@ -28,9 +31,8 @@ function Contact() {
           Kapellestraat 29 9890 Asper
         </a>
       </div>
-  
-        <MapView />
-    
+
+      <MapView />
     </div>
   );
 }

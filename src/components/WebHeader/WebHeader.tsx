@@ -3,9 +3,13 @@ import "./WebHeader.css";
 
 function WebHeader() {
   return (
-    <div>
-      <img src={logo} alt="logo_speedycare" />
-    </div>
+    <header className="web-header">
+      <img
+        className="web-header__logo"
+        src={logo}
+        alt="SpeedyCare logo"
+      />
+    </header>
   );
 }
 

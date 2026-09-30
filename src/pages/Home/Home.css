@@ -1,0 +1,35 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 1rem 2rem 1rem;
+    text-align: left;
+}
+
+.home-content h1 {
+    margin-bottom: 0.5rem;
+}
+
+.home-content p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .home-content {
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .home-content {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

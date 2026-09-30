@@ -1,26 +1,96 @@
 .nav {
-    background-color: #0203cf;
+    background-color: var(--color-primary);
     width: 100%;
     margin-bottom: 1rem;
 }
 
 .nav .MuiTab-root {
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
-  min-height: 3rem;
-  margin: 0 2rem;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    min-height: 3rem;
+    margin: 0 2rem;
 }
 
 .nav .MuiTab-root:hover {
-  color: white;
+    color: white;
 }
 
 .nav .MuiTab-root.Mui-selected {
-  color: var(--color-secondary);
-  background-color: var(--color-primary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 /* Active tab stripe */
+
 .nav .MuiTabs-indicator {
-  background-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+}
+
+
+
+
+/* =========================
+   Mobile navigation
+   ========================= */
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* =========================
+   Phone
+   ========================= */
+
+@media (max-width: 1024px) {
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 100%;
+        min-height: 3rem;
+
+        background-color: var(--color-primary);
+        margin-bottom: 1rem;
+    }
+
+    .menu-button {
+        color: var(--color-secondary) !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .menu-button:hover {
+        color: white !important;
+    }
+
+    .menu-button .material-symbols-outlined {
+        font-size: 2rem;
+    }
+
+    .mobile-menu {
+        width: 250px;
+        padding-top: 1rem !important;
+    }
+}
+
+
+/* =========================
+   Laptop / desktop
+   ========================= */
+
+@media (min-width: 1025px) {
+
+    .desktop-nav {
+        display: flex !important;
+    }
+
+    .mobile-nav {
+        display: none !important;
+    }
 }

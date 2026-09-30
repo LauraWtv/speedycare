@@ -8,7 +8,7 @@ function Jobs() {
         <h1>Kom jij ons team versterken?</h1>
         <p>
           Op dit moment hebben we geen openstaande vacatures. Toch zijn we
-          altijd geïntresseerd in gemotiveerde en enthousiaste collega's die
+          altijd geïnteresseerd in gemotiveerde en enthousiaste collega's die
           graag willen deel uitmaken van ons team.
         </p>
         <CustomCard />

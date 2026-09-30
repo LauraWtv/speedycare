@@ -2,8 +2,9 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="content">
+    <div className="home-content">
       <h1>Home</h1>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum
         nec elit eu interdum. Quisque nec accumsan magna. Curabitur porttitor

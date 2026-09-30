@@ -4,27 +4,40 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     margin: 0;
+    width: 100%;
+    min-width: 320px;
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: Arial, sans-serif;
 }
 
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Links */
+
 .link-accent {
-  color: var(--color-secondary);
-  text-decoration: underline;
+    color: var(--color-secondary);
+    text-decoration: underline;
 }
 
 .link-accent:hover {
-  color: white;
+    color: white;
 }
 
 .link-primary {
-  color: var(--color-primary);
-  text-decoration: underline;
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 .link-primary:hover {
-  color: var(--color-secondary);
+    color: var(--color-secondary);
 }
