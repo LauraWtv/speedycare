@@ -17,7 +17,6 @@ function App() {
       <div className="app">
         <div className="top-section">
           <Navigation />
-          {/* <WebHeader /> */}
         </div>
 
         <main>
