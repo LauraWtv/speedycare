@@ -10,7 +10,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-
+import logo from "../../assets/logo.jpg";
 import { useState } from "react";
 
 function Navigation() {
@@ -34,102 +34,56 @@ function Navigation() {
 
   return (
     <>
-      {/* Desktop navigation */}
-      <Tabs
-        value={location.pathname}
-        onChange={handleChange}
-        className="nav desktop-nav"
-        centered
-      >
-        <Tab
-          icon={<span className="material-symbols-outlined">home</span>}
-          iconPosition="start"
-          label="Home"
-          value="/"
-        />
+      <div className="nav">
+        {/* Logo stays visible on all screen sizes */}
+        <img className="web-header__logo" src={logo} alt="SpeedyCare logo" />
 
-        <Tab
-          icon={
-            <span className="material-symbols-outlined">medical_services</span>
-          }
-          iconPosition="start"
-          label="Expertise"
-          value="/expertise"
-        />
+        {/* Desktop navigation */}
+        <div className="desktop-tabs">
+          <Tabs value={location.pathname} onChange={handleChange}>
+            <Tab label="Home" value="/" />
+            <Tab label="Expertise" value="/expertise" />
+            <Tab label="Team" value="/team" />
+            <Tab label="Jobs" value="/jobs" />
+            <Tab label="Contact" value="/contact" />
+          </Tabs>
+        </div>
 
-        <Tab
-          icon={<span className="material-symbols-outlined">groups</span>}
-          iconPosition="start"
-          label="Team"
-          value="/team"
-        />
+        {/* Mobile navigation */}
+        <div className="mobile-nav">
+          <IconButton
+            className="menu-button"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open navigation menu"
+          >
+            <span className="material-symbols-outlined">menu</span>
+          </IconButton>
 
-        <Tab
-          icon={<span className="material-symbols-outlined">work</span>}
-          iconPosition="start"
-          label="Jobs"
-          value="/jobs"
-        />
-
-        <Tab
-          icon={<span className="material-symbols-outlined">mail</span>}
-          iconPosition="start"
-          label="Contact"
-          value="/contact"
-        />
-      </Tabs>
-
-      {/* Mobile navigation */}
-      <div className="mobile-nav">
-        <IconButton
-          className="menu-button"
-          onClick={() => setMenuOpen(true)}
-          aria-label="Open navigation menu"
-        >
-          <span className="material-symbols-outlined">menu</span>
-        </IconButton>
-
-        <Drawer
-          anchor="right"
-          open={menuOpen}
-          onClose={() => setMenuOpen(false)}
-        >
-          <List className="mobile-menu">
-            <ListItem disablePadding>
-              <ListItemButton onClick={() => handleMobileNavigation("/")}>
-                <ListItemText primary="Home" />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem disablePadding>
-              <ListItemButton
-                onClick={() => handleMobileNavigation("/expertise")}
-              >
-                <ListItemText primary="Expertise" />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem disablePadding>
-              <ListItemButton onClick={() => handleMobileNavigation("/team")}>
-                <ListItemText primary="Team" />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem disablePadding>
-              <ListItemButton onClick={() => handleMobileNavigation("/jobs")}>
-                <ListItemText primary="Jobs" />
-              </ListItemButton>
-            </ListItem>
-
-            <ListItem disablePadding>
-              <ListItemButton
-                onClick={() => handleMobileNavigation("/contact")}
-              >
-                <ListItemText primary="Contact" />
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </Drawer>
+          <Drawer
+            anchor="right"
+            open={menuOpen}
+            onClose={() => setMenuOpen(false)}
+          >
+            <List className="mobile-menu">
+              {[
+                { label: "Home", path: "/" },
+                { label: "Expertise", path: "/expertise" },
+                { label: "Team", path: "/team" },
+                { label: "Jobs", path: "/jobs" },
+                { label: "Contact", path: "/contact" },
+              ].map(({ label, path }) => (
+                <ListItem key={path} disablePadding>
+                  <ListItemButton
+                    selected={location.pathname === path}
+                    onClick={() => handleMobileNavigation(path)}
+                  >
+                    <ListItemText primary={label} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Drawer>
+        </div>
       </div>
     </>
   );

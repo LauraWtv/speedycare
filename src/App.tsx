@@ -6,7 +6,6 @@ import Jobs from "./pages/Jobs/Jobs";
 import Team from "./pages/Team/Team";
 import Contact from "./pages/Contact/Contact";
 import Navigation from "./components/Navigation/Navigation";
-import WebHeader from "./components/WebHeader/WebHeader";
 import Footer from "./components/Footer/Footer";
 import PrivacyCookies from "./pages/PrivacyCookies/PrivacyCookies";
 
@@ -18,7 +17,7 @@ function App() {
       <div className="app">
         <div className="top-section">
           <Navigation />
-          <WebHeader />
+          {/* <WebHeader /> */}
         </div>
 
         <main>
